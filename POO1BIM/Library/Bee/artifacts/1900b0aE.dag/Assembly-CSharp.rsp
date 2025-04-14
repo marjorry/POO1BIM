@@ -440,6 +440,7 @@
 -analyzer:"C:/Program Files/Unity 6000.0.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.Properties.SourceGenerator.dll"
 -analyzer:"C:/Program Files/Unity 6000.0.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.SourceGenerators.dll"
 -analyzer:"C:/Program Files/Unity 6000.0.42f1/Editor/Data/Tools/Unity.SourceGenerators/Unity.UIToolkit.SourceGenerator.dll"
+"Assets/caminhao.cs"
 "Assets/carro.cs"
 "Assets/teste.cs"
 -langversion:9.0
