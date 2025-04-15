@@ -51,6 +51,19 @@ public class carro
     {
         return this.preco;
     }
-    
+
+    public bool ComparePreco(carro carro)
+    {
+
+        if (ComparePreco(carro))
+        {
+            return true; 
+        }
+       
+        
+        
+        return false; 
+    }
+   
 
 }
