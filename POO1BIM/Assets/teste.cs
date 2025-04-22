@@ -29,12 +29,15 @@ public class teste : MonoBehaviour
         caminhao.AtribuirPreco(2050.90f);
         caminhao.AtribuirCor("Verde");
         caminhao.AtribuirNome("Fusca do Shalom");
+        
+        //fusca.AtribuirTipoDeCarroceria("Larga");
 
         if (fusca.ComparePreco(caminhao))
         {
             Debug.Log("O carro " + fusca.NomeDoCarro() + "é mais caro do que o carro " + gol.NomeDoCarro());
         }
-        //else
+        personagem. AtribuirNome("Melo");
+        
         
         
         
