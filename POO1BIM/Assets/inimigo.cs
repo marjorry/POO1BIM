@@ -28,8 +28,8 @@ public class inimigo : personagem
     {
         return arma;
     }
-    
-    public int DanoDoInimigo()
+
+    public void DanoDoInimigo()
     {
         int dano = 0;
 
@@ -40,61 +40,17 @@ public class inimigo : personagem
                 break;
             case "MACHADO":
                 dano = dano = Forca_Ataque() + 18;
+                break;
+            case "ADAGA":
+                dano = Forca_Ataque() + 5;
+                break;
         }
-        
-        
-        
-        
+
+
     }
-    
-    public string Armadura()
-    {
-        return armadura;
-    }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
-    void Start()
-    {
-        
-    }
-
+    
     // Update is called once per frame
-    void Update()
-    {
-        
-    }
+   
 }

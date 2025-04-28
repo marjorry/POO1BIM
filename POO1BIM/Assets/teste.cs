@@ -7,6 +7,11 @@ public class teste : MonoBehaviour
     
     caminhao caminhao = new caminhao();
     
+    //=====================================
+
+    private personagem joao = new personagem();
+    inimigo ork = new inimigo();
+    
     void Start()
     {
         fusca. AtribuirNome("Fusca do Shalom");
@@ -36,11 +41,31 @@ public class teste : MonoBehaviour
         {
             Debug.Log("O carro " + fusca.NomeDoCarro() + "é mais caro do que o carro " + gol.NomeDoCarro());
         }
-        personagem. AtribuirNome("Melo");
+        
+        //================================================
+        
+        joao.AtribuirNome("Joao Roberto II");
+        joao.AtribuirEnergia(10);
+        joao.AtribuirForca_Ataque(12);
+        joao.AtribuirForca_Do_pulo(6);
+        joao.AtribuirVelocidade(8);
+        joao.AtribuirNumero_de_pes(2);
+        joao.AtribuitNumero_de_maos(4);
         
         
-        
-        
+        ork.AtribuirNome("Ork Gob");
+        ork.AtribuirEnergia(23);
+        ork.AtribuirForca_Ataque(15);
+        ork.AtribuirForca_Do_pulo(8);
+        ork.AtribuirVelocidade(6);
+        ork.AtribuirNumero_de_pes(2);
+        ork.AtribuitNumero_de_maos(4);
+
+
+        if (joao.Energia() > ork.Forca_Ataque())
+        {
+            Debug.Log( "o personagem sobreviveu ao ataque do ork" + joao.getNome());
+        }
         
         
         
