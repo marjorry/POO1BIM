@@ -445,6 +445,7 @@
 "Assets/inimigo.cs"
 "Assets/personagem.cs"
 "Assets/teste.cs"
+"Assets/testedodano.cs"
 -langversion:9.0
 /deterministic
 /optimize+
