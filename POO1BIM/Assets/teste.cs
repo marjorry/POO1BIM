@@ -9,7 +9,7 @@ public class teste : MonoBehaviour
     
     //=====================================
 
-    private Personagem joao = new Personagem();
+    private personagem joao = new personagem();
     inimigo ork = new inimigo();
     
     void Start()

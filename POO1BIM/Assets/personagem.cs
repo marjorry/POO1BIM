@@ -1,7 +1,7 @@
 using UnityEditor;
 using UnityEngine;
 
-public class Personagem : MonoBehaviour
+public class personagem : MonoBehaviour
 
 {
         [ SerializeField ]

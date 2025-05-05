@@ -2,7 +2,7 @@ using UnityEngine;
 
 using UnityEngine;
 
-public class inimigo : Personagem
+public class inimigo : personagem
 {
     
     
@@ -43,7 +43,7 @@ public class inimigo : Personagem
         return arma;
     }
 
-    public void DanoDoInimigo()
+    public int DanoDoInimigo()
     {
         int dano = 0;
 
@@ -62,7 +62,7 @@ public class inimigo : Personagem
                 break;
         }
 
-
+        return dano;
     }
     
     // Start is called once before the first execution of Update after the MonoBehaviour is created
