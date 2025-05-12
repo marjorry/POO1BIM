@@ -443,6 +443,7 @@
 "Assets/caminhao.cs"
 "Assets/carro.cs"
 "Assets/inimigo.cs"
+"Assets/movimentodoinimigo.cs"
 "Assets/personagem.cs"
 "Assets/player.cs"
 "Assets/teste.cs"
