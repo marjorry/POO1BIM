@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 public class movimentodoinimigo : MonoBehaviour
@@ -5,6 +6,8 @@ public class movimentodoinimigo : MonoBehaviour
     private GameObject _player;
     
     private Rigidbody _rigidbody;
+    
+    [ SerializeField ]
     private float velocidade;
 
     public float raioDeVisao = 3;
@@ -23,7 +26,10 @@ public class movimentodoinimigo : MonoBehaviour
 
     void Update()
     {
-        if (Vector3.Distance(transform.position, _player.transform.position) < raioDeVisao)
+        _sphereCollider.radius = raioDeVisao;
+        
+        //if (Vector3.Distance(transform.position, _player.transform.position) < raioDeVisao)
+        if(naVisao == true)
         {
             transform.LookAt(_player.transform.position);
             transform.position = Vector3.MoveTowards(transform.position, _player.transform.position, velocidade * Time.deltaTime);
@@ -38,6 +44,12 @@ public class movimentodoinimigo : MonoBehaviour
         }
     }
 
-   
+    private void OnTriggerExit(Collider colisao)
+    {
+        if (colisao.gameObject.CompareTag("Player"))
+        {
+            naVisao = false;
+        }
+    }
 }
 
