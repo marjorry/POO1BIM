@@ -446,6 +446,7 @@
 "Assets/movimentodoinimigo.cs"
 "Assets/personagem.cs"
 "Assets/player.cs"
+"Assets/PlayerManager.cs"
 "Assets/teste.cs"
 "Assets/testedodano.cs"
 -langversion:9.0
