@@ -2,15 +2,23 @@ using UnityEngine;
 
 public class PlayerManager : MonoBehaviour
 {
-    // Start is called once before the first execution of Update after the MonoBehaviour is created
+    public Animator animator;
+    private  MovimentoPlayer movimentoPlayer;
+    public float velocidadeDaAnimacao = 1;
+    
     void Start()
     {
-        
+        movimentoPlayer = GetComponent<MovimentoPlayer>();
     }
-
-    // Update is called once per frame
     void Update()
     {
-        
+        animator.SetBool("Andando", movimentoPlayer.andando);
+        animator.speed = velocidadeDaAnimacao;
+
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            animator.SetTrigger("Ataque");  
+        }
     }
 }
+

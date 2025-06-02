@@ -444,6 +444,7 @@
 "Assets/carro.cs"
 "Assets/inimigo.cs"
 "Assets/movimentodoinimigo.cs"
+"Assets/movimentodoplayer.cs"
 "Assets/personagem.cs"
 "Assets/player.cs"
 "Assets/PlayerManager.cs"
