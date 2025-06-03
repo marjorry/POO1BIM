@@ -1,10 +1,13 @@
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PlayerManager : MonoBehaviour
 {
     public Animator animator;
     private  MovimentoPlayer movimentoPlayer;
     public float velocidadeDaAnimacao = 1;
+    private personagem personagem;
+        
     
     void Start()
     {
@@ -18,6 +21,11 @@ public class PlayerManager : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Space))
         {
             animator.SetTrigger("Ataque");  
+        }
+
+        if (personagem.Energia() <= 0)
+        {
+            SceneManager.LoadScene(SceneManager.GetActiveScene().name);
         }
     }
 }
